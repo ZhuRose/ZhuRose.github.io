@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>happy birthday to miemie</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link href="./css/app.css" rel="stylesheet">
+</head>
+<body>
+<div id="app">
+    <div class="container">
+        <div class="lucky-wheel">
+            <div class="lucky-title"></div>
+            <div class="wheel-main">
+                <div class="wheel-pointer-box">
+                    <div class="wheel-pointer" style="transition: transform 12s ease-in-out;" onclick="pointerOnClick()"></div>
+                </div>
+                <div class="wheel-bg" style="transition: transform 4s ease-in-out;">
+                    <div class="prize-list">
+                        <div class="prize-item">
+                            <div class="prize-pic">
+                                <img src="./img/ysl.png"></div>
+                            <div class="prize-type">
+                                YSL
+                            </div>
+                        </div>
+                        <div class="prize-item">
+                            <div class="prize-pic">
+                                <img src="./img/armani.png">
+                            </div>
+                            <div class="prize-type">
+                                阿玛尼
+                            </div>
+                        </div>
+                        <div class="prize-item">
+                            <div class="prize-pic">
+                                <img src="./img/chanel.png">
+                            </div>
+                            <div class="prize-type">
+                                香奈儿
+                            </div>
+                        </div>
+                        <div class="prize-item">
+                            <div class="prize-pic">
+                                <img src="./img/baobao.png">
+                            </div>
+                            <div class="prize-type">
+                                未中奖
+                            </div>
+                        </div>
+                        <div class="prize-item">
+                            <div class="prize-pic">
+                                <img src="./img/givenchy.png">
+                            </div>
+                            <div class="prize-type">
+                                纪梵希
+                            </div>
+                        </div>
+                        <div class="prize-item">
+                            <div class="prize-pic">
+                                <img src="./img/lancom.png">
+                            </div>
+                            <div class="prize-type">
+                                兰蔻
+                            </div>
+                        </div>
+                        <div class="prize-item">
+                            <div class="prize-pic">
+                                <img src="./img/dior.png">
+                            </div>
+                            <div class="prize-type">
+                                迪奥
+                            </div>
+                        </div>
+                        <div class="prize-item">
+                            <div class="prize-pic">
+                                <img src="./img/tf.png">
+                            </div>
+                            <div class="prize-type">
+                                TF
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="main-bg"></div>
+            <div class="bg-p"></div>
+            <div class="content">
+                <div class="lottery_ticket">
+                    抽奖次数:2
+                </div>
+            </div>
+        </div>
+        <div class="toast" style="display: none;">
+            <div class="toast-container">
+                <img src="img/sorry.png" class="toast-picture">
+                <div class="close" onclick="closebtnOnClick()"></div>
+                <div class="toast-title">
+                    再差一点就中奖了~
+                </div>
+                <div class="toast-btn" onclick="closebtnOnClick()">
+                    <div class="toast-cancel">
+                        关闭
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="toast-mask" style="display: none;"></div>
+    </div>
+</div>
+<script type="text/javascript" src="./js/app.js"></script>
+</body>
+</html>
